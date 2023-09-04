@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Multiplication Memorization</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Multiplication Memorization Game</h1>
+        <p class="instructions">Click below to start!</p>
+        <form action="/ask_question" method="POST">
+            <button class="start-button" type="submit">Start Game</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Multiplication Question</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1 class="question">What is {{ num1 }} x {{ num2 }}?</h1>
+        <form action="/check_answer" method="POST">
+            <input class="answer-input" type="number" name="user_answer" required>
+            <input type="hidden" name="num1" value="{{ num1 }}">
+            <input type="hidden" name="num2" value="{{ num2 }}">
+            <input type="hidden" name="correct_answer" value="{{ correct_answer }}">
+            <button class="submit-button" type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

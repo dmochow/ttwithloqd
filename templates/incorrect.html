@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Answer Feedback</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1 class="feedback">Incorrect!</h1>
+            <p class="scoreboard">Score: {{ correct_answers }} / {{ total_questions_attempted }}</p>
+            <p class="multiplication-expression">{{ num1 }} x {{ num2 }} = {{ correct_answer }}</p>
+        <!-- For 'incorrect.html', replace 'Correct!' with 'Incorrect!' -->
+        <form action="/ask_question" method="POST">
+            <button class="next-button" type="submit">Next Question</button>
+        </form>
+    </div>
+</body>
+</html>
+
+
+
+
