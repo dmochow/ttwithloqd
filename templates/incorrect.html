@@ -12,6 +12,8 @@
         <!-- For 'incorrect.html', replace 'Correct!' with 'Incorrect!' -->
         <form action="/ask_question" method="POST">
             <button class="next-button" type="submit">Next Question</button>
+            <input type="hidden" name="name" value="{{ name }}">
+            <input type="hidden" name="age" value="{{ age }}">
         </form>
     </div>
 </body>
